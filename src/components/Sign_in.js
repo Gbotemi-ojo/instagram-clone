@@ -41,11 +41,13 @@ function SignIn() {
     }
     return (
         <section className='sign-in-page-container'>
-            <div className='phone-template-back'>
-                <img src={phoneTemplateImage} style={backImageStyles} className='phone-template-back'/>
-            </div>
-            <div className='phone-template-front'>
-                <img src={phoneTemplateImage} className='phone-template-front' style={frontImageStyles} />
+            <div className='phone-templates-container'>
+                <div className='phone-template-back'>
+                    <img src={phoneTemplateImage} style={backImageStyles} className='phone-template-back' />
+                </div>
+                <div className='phone-template-front'>
+                    <img src={phoneTemplateImage} className='phone-template-front' style={frontImageStyles} />
+                </div>
             </div>
             <div className='sign-in-container'>
                 <div className='sign-in-container-top'>

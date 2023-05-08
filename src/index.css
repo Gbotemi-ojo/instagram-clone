@@ -1,29 +1,39 @@
 /* sign in page starts here */
 .sign-in-page-container {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   width: 98vw;
   height: 80vh;
   gap: 20px;
 }
-.phone-template-front{
+
+.phone-template-front {
   z-index: 2;
 }
-.phone-template-front,.phone-template-back {
+
+.phone-template-front,
+.phone-template-back {
   height: 68vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: auto;
 }
-.phone-template-back{
+
+.phone-template-back {
   position: relative;
-  left: 200px;
-  left: 15%;
+  left: 18%;
   bottom: 2%;
 }
+
+.phone-templates-container {
+  display: flex;
+}
+
+
+
 .sign-in-container {
-  width: 350px;
+  width: 21%;
   display: flex;
   flex-direction: column;
   height: 72vh;
@@ -102,7 +112,8 @@
   align-items: center;
   justify-content: space-around;
 }
-.sign-in-container-bottom{
+
+.sign-in-container-bottom {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -110,25 +121,31 @@
   width: 100%;
   border: 1px solid grey;
 }
-.get-the-app-text{
+
+.get-the-app-text {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .blur-out {
   animation: blur-out 0.5s ease-in-out both;
 }
+
 @keyframes blur-out {
   0% {
     opacity: 0.9;
   }
-  50%{
+
+  50% {
     opacity: 0.5;
   }
-  80%{
+
+  80% {
     opacity: 0.2;
   }
-  100%{
+
+  100% {
     opacity: 0;
   }
 
@@ -136,6 +153,161 @@
     transform: translateZ(-400px);
   }
 }
-@media(min-width){
-  
+
+@media(min-width: 1200px) and (max-width:1300px) {
+  .sign-in-container {
+    width: 25%;
+  }
+}
+
+@media(min-width: 1100px) and (max-width:1200px) {
+  .sign-in-container {
+    width: 28%;
+  }
+}
+
+@media(min-width: 1000px) and (max-width:1100px) {
+  .sign-in-container {
+    width: 40%;
+  }
+}
+
+@media(min-width: 800px) and (max-width:1000px) {
+  .sign-in-container {
+    width: 35%;
+  }
+
+  .phone-templates-container {
+    display: none;
+  }
+
+  .sign-in-page-container {
+    justify-content: center;
+  }
+}
+
+@media(min-width: 900px) and (max-width:1000px) {
+  .sign-in-container {
+    width: 35%;
+  }
+
+  .phone-templates-container {
+    display: none;
+  }
+
+  .sign-in-page-container {
+    background-color: green;
+    justify-content: center;
+  }
+}
+/* checked */
+@media(min-width: 800px) and (max-width:900px) {
+  .sign-in-container {
+    width: 40%;
+    height: 90%;
+  }
+  .phone-templates-container {
+    display: none;
+  }
+  .sign-in-page-container {
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media(min-width: 700px) and (max-width:800px) {
+  .sign-in-container {
+    width: 50%;
+    height: 90%;
+  }
+
+  .phone-templates-container {
+    display: none;
+  }
+
+  .sign-in-page-container {
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media(min-width: 600px) and (max-width:700px) {
+  .sign-in-container {
+    width: 60%;
+    height: 90%;
+  }
+
+  .phone-templates-container {
+    display: none;
+  }
+
+  .sign-in-page-container {
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media(min-width: 500px) and (max-width:600px) {
+  .sign-in-container {
+    width: 70%;
+    height: 90%;
+  }
+
+  .phone-templates-container {
+    display: none;
+  }
+
+  .sign-in-page-container {
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media(min-width: 400px) and (max-width:500px) {
+  .sign-in-container {
+    width: 80%;
+    height: 90%;
+  }
+
+  .phone-templates-container {
+    display: none;
+  }
+
+  .sign-in-page-container {
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media(min-width: 300px) and (max-width:400px) {
+  .sign-in-container {
+    width: 90%;
+    height: 90%;
+  }
+
+  .phone-templates-container {
+    display: none;
+  }
+
+  .sign-in-page-container {
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media(min-width: 100px) and (max-width:300px) {
+  .sign-in-container {
+    width: 100%;
+    height: 99%;
+  }
+
+  .phone-templates-container {
+    display: none;
+  }
+
+  .sign-in-page-container {
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+  }
 }

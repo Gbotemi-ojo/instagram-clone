@@ -1,0 +1,141 @@
+/* sign in page starts here */
+.sign-in-page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 98vw;
+  height: 80vh;
+  gap: 20px;
+}
+.phone-template-front{
+  z-index: 2;
+}
+.phone-template-front,.phone-template-back {
+  height: 68vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+.phone-template-back{
+  position: relative;
+  left: 200px;
+  left: 15%;
+  bottom: 2%;
+}
+.sign-in-container {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  height: 72vh;
+  justify-content: space-between;
+}
+
+.sign-in-container-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 65%;
+  border: 1px solid grey;
+}
+
+.microsoftBtn,
+.googleBtn {
+  width: 150px;
+  height: 50px;
+}
+
+.insta-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30%;
+  font-size: 40px;
+  font-style: italic;
+  font-weight: 700;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 65%;
+  width: 100%;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 6px;
+}
+
+.userName-input,
+.password-input {
+  width: 80%;
+  height: 28px;
+  background-color: rgb(128, 128, 128, 0.1);
+  border: 1px solid grey;
+}
+
+.login-btn {
+  margin-top: 5px;
+  width: 80%;
+  height: 32px;
+  background-color: rgb(9, 190, 251);
+  color: white;
+  border: none;
+  border-radius: 12px;
+}
+
+.sign-up-breaker {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.forgot-password-container {
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.sign-in-container-bottom{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10%;
+  width: 100%;
+  border: 1px solid grey;
+}
+.get-the-app-text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.blur-out {
+  animation: blur-out 0.5s ease-in-out both;
+}
+@keyframes blur-out {
+  0% {
+    opacity: 0.9;
+  }
+  50%{
+    opacity: 0.5;
+  }
+  80%{
+    opacity: 0.2;
+  }
+  100%{
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateZ(-400px);
+  }
+}
+@media(min-width){
+  
+}

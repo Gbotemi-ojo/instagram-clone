@@ -1,0 +1,339 @@
+/* sign in page starts here */
+
+:root {
+    --button-color: rgb(0, 149, 246);
+    --input-color: rgb(250, 250, 250);
+    --border-color: rgb(219, 219, 219);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Cinzel', serif;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.sign-in-page-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 98vw;
+    height: 80vh;
+    gap: 20px;
+}
+
+.sign-in-container {
+    width: 21%;
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+    height: 540px;
+    justify-content: space-between;
+    position: relative;
+    top: 5vh;
+}
+
+.sign-in-container-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 65%;
+    border: 1px solid var(--border-color);
+}
+
+.microsoftBtn,
+.googleBtn {
+    width: 45%;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.insta-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30%;
+    font-size: 40px;
+    font-style: italic;
+    font-weight: 700;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 65%;
+    width: 100%;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 6px;
+}
+
+.input>input {
+    background-color: var(--input-color);
+}
+
+.userName-input,
+.password-input {
+    width: 80%;
+    height: 28px;
+    border: 1px solid var(--border-color);
+}
+
+.login-btn {
+    margin-top: 5px;
+    width: 80%;
+    height: 32px;
+    background-color: rgb(9, 190, 251);
+    background-color: var(--button-color);
+    color: white;
+    border: none;
+    border-radius: 7px;
+    font-weight: 600;
+}
+
+.sign-up-breaker {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.forgot-password-container {
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.sign-in-container-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+    width: 100%;
+    border: 1px solid var(--border-color);
+}
+
+.get-the-app-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.phone-template-back,
+.phone-template-front {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 62vh;
+    width: 350px;
+    background-image: url('../../assets/sign_up/phone-template.png');
+    background-position: 'center';
+    background-repeat: no-repeat;
+    background-size: auto 500px;
+    position: relative;
+}
+
+.phone-template-back>img,
+.phone-template-front>img {
+    position: relative;
+    top: 13px;
+    height: 460px;
+    width: 215px;
+    margin-right: 22px;
+}
+
+.phone-template-back {
+    position: relative;
+    left: 28%;
+    bottom: 2%;
+}
+
+.phone-template-front {
+    z-index: 2;
+}
+
+.phone-templates-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.sign-in-btns-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 25px;
+}
+
+.toggle-password-visibility {
+    position: absolute;
+    top: 145px;
+    right: 35px;
+    width: 100px;
+    height: 26px;
+    border: none;
+    text-align: end;
+    background-color: var(--input-color);
+    cursor: pointer;
+}
+
+
+@media(max-width: 1300px) {
+    .sign-in-page-container {
+        width: 100vw;
+        height: 100vh;
+        justify-content: space-around;
+    }
+}
+
+@media(min-width: 1300px) and (max-width:1500px) {
+    .sign-in-container {
+        width: 25%;
+    }
+
+    .phone-template-back,
+    .phone-template-front {
+        height: 70vh;
+    }
+}
+
+@media(min-width: 1100px) and (max-width:1300px) {
+    .sign-in-container {
+        width: 28%;
+    }
+
+    .phone-template-back,
+    .phone-template-front {
+        height: 85vh;
+    }
+}
+
+@media(min-width: 950px) and (max-width:1100px) {
+    .sign-in-container {
+        width: 33%;
+    }
+
+    .phone-templates-container {
+        position: absolute;
+        left: -40px;
+    }
+
+    .phone-template-back,
+    .phone-template-front {
+        height: 95vh;
+    }
+}
+
+@media(max-width: 1100px) {
+    .sign-in-container {
+        position: absolute;
+        right: 20px;
+    }
+}
+
+
+@media(min-width: 875px) and (max-width:950px) {
+    .sign-in-container {
+        width: 38%;
+    }
+
+    .phone-templates-container {
+        position: absolute;
+        left: -125px;
+    }
+
+    .phone-template-back,
+    .phone-template-front {
+        height: 95vh;
+    }
+}
+
+@media(max-width: 875px) {
+
+    .phone-templates-container {
+        display: none;
+    }
+
+    .sign-in-container {
+        position: relative;
+        left: 0;
+    }
+}
+
+@media(min-width: 750px) and (max-width:875px) {
+    .sign-in-container {
+        width: 40%;
+    }
+}
+
+@media(min-width: 600px) and (max-width:750px) {
+    .sign-in-container {
+        width: 50%;
+    }
+}
+
+@media(min-width: 500px) and (max-width:600px) {
+    .sign-in-container {
+        width: 60%;
+    }
+}
+
+@media(max-width:450px) {
+
+    .sign-in-container-top,
+    .sign-in-container-bottom {
+        border: none;
+    }
+
+}
+
+@media(min-width: 400px) and (max-width:500px) {
+    .sign-in-container {
+        width: 75%;
+    }
+}
+
+@media(min-width: 350px) and (max-width:400px) {
+    .sign-in-container {
+        width: 90%;
+    }
+}
+
+@media(min-width: 250px) and (max-width:350px) {
+    .sign-in-container {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* sign up form */
+.sign_up_form_container{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sign_up_form{
+    display: flex;
+    flex-direction: column
+}

@@ -1,15 +1,16 @@
 import React, { useState } from 'react';
-import phoneTemplateImage from '../images/sign_up/phone-template.png';
-import googleplayImage from '../images/sign_up/googleplay.png';
-import microsoftImage from '../images/sign_up/microsoft.png';
-import screenshot1 from '../images/sign_up/screenshot1.png';
-import screenshot2 from '../images/sign_up/screenshot2.png';
-import screenshot3 from '../images/sign_up/screenshot3.png';
-import screenshot4 from '../images/sign_up/screenshot4.png';
-function SignIn() {
+import googleplayImage from '../../assets/sign_up/googleplay.png';
+import microsoftImage from '../../assets/sign_up/microsoft.png';
+import screenshot1 from '../../assets/sign_up/screenshot1.png';
+import screenshot2 from '../../assets/sign_up/screenshot2.png';
+import screenshot3 from '../../assets/sign_up/screenshot3.png';
+import screenshot4 from '../../assets/sign_up/screenshot4.png';
+import '../sign_in/sign_in.css';
+function SignUp() {
     const [currentImg, setCurrentImg] = useState(screenshot2);
     const [imageIndex, setImageIndex] = useState(0);
     const demoImages = [screenshot1, screenshot2, screenshot3, screenshot4];
+    const toggle_password_visibility = () => { }
     const handleImageIndex = () => {
         setTimeout(() => {
             if (imageIndex === (demoImages.length - 1)) {
@@ -46,23 +47,29 @@ function SignIn() {
                     <img src={currentImg} />
                 </div>
             </div>
-            <div className='sign-in-container'>
+            <div className='sign_up_form_container'>
                 <div className='sign-in-container-top'>
                     <div className='insta-logo'>Instagram</div>
-                    <div className='form-container'>
-                        <div className='input'>
-                            <input className='userName-input' placeholder='phone-number,username or email' />
-                            <input type='password' className='password-input' placeholder='password' />
-                            <button className='login-btn'>Log In</button>
-                            <div className='sign-up-breaker'>   __________OR__________</div>
-                        </div>
-                        <div className='forgot-password-container'>
-                            <a href='po'>Log in with facebook?</a>
-                            <a href='pop'>Forgot password?</a>
-                        </div>
+                    <div>Sign up to see photos and videos from your friends.</div>
+                    <button>Log In with Facebook</button>
+                    <div>OR</div>
+                    <div className='form_container'>
+                        <form action="" className='sign_up_form'>
+                            <input type="text" placeholder='Mobile Number'/>
+                            <input type="text" placeholder='Full Name'/>
+                            <input type="text" placeholder='Username'/>
+                            <input type="text" placeholder='password'/>
+                        </form>
                     </div>
+                    <div>
+                        People who use our service may have uploaded your contact information to Instagram. Learn More
+                    </div>
+                    <div>
+                        By signing up, you agree to our Terms , Privacy Policy and Cookies Policy .
+                    </div>
+                    <button>Sign Up</button>
                 </div>
-                <div className='sign-in-container-bottom'>Don't have an account? Sign up</div>
+                <div className='sign-in-container-bottom'>Don't have an account? <a href=""> Sign up</a></div>
                 <div className='get-the-app-text'>Get the app</div>
                 <div className='sign-in-btns-container'>
                     <img src={googleplayImage} className='googleBtn' />
@@ -72,5 +79,4 @@ function SignIn() {
         </section>
     )
 }
-export default SignIn;
-
+export default SignUp;

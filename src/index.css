@@ -1,336 +1,17 @@
-/* sign in page starts here */
-
-.sign-in-page-container {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  width: 98vw;
-  height: 80vh;
-  gap: 20px;
-}
-
-.sign-in-container {
-  width: 21%;
-  display: flex;
-  flex-direction: column;
-  height: 70vh;
-  height: 540px;
-  justify-content: space-between;
-  position: relative;
-  top: 5vh;
-}
-
-.sign-in-container-top {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 65%;
-  border: 1px solid grey;
-}
-
-.microsoftBtn,
-.googleBtn {
-  width: 150px;
-  height: 50px;
-}
-
-.insta-logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 30%;
-  font-size: 40px;
-  font-style: italic;
-  font-weight: 700;
-}
-
-.form-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 65%;
-  width: 100%;
-}
-
-.input {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  gap: 6px;
-}
-
-.userName-input,
-.password-input {
-  width: 80%;
-  height: 28px;
-  background-color: rgb(128, 128, 128, 0.1);
-  border: 1px solid grey;
-}
-
-.login-btn {
-  margin-top: 5px;
-  width: 80%;
-  height: 32px;
-  background-color: rgb(9, 190, 251);
-  color: white;
-  border: none;
-  border-radius: 12px;
-}
-
-.sign-up-breaker {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  margin-top: 15px;
-}
-
-.forgot-password-container {
-  height: 30%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.sign-in-container-bottom {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 10%;
-  width: 100%;
-  border: 1px solid grey;
-}
-
-.get-the-app-text {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.box{
-  height: 100px;
-  width: 100px;
-  background-color: red;
-}
-
-/* .blur-out {
-  animation: blur-out 0.5s ease-in-out both;
-} */
-
-
-.phone-template-back,
-.phone-template-front {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  height: 62vh;
-  width: 350px;
-  background-image: url('./images/sign_up/phone-template.png');
-  background-position: 'center';
-  background-repeat: no-repeat;
-  background-size: auto 500px;
-  position: relative;
-}
-
-.phone-template-back>img,
-.phone-template-front>img {
-  position: relative;
-  top: 13px;
-  height: 450px;
-  width: 205px;
-  margin-right: 22px;
-}
-
-.phone-template-back {
-  position: relative;
-  left: 28%;
-  bottom: 2%;
-}
-
-.phone-template-front {
-  z-index: 2;
-}
-
-.phone-templates-container {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  margin-top: 50px;
-}
-
-/* @media(max-width: 2000px) {
-  body {
-    background-color: red;
-  }
-}
-
-@media(min-width : 2300px) {
-  body {
-    background-color: green;
-  }
-} */
-
-@media(max-width: 1300px) {
-  .sign-in-page-container {
-    width: 100vw;
-    height: 100vh;
-    justify-content: space-around;
-  }
-}
-
-@media(min-width: 1300px) and (max-width:1500px) {
-  .sign-in-container {
-    width: 25%;
-  }
-
-  .phone-template-back,
-  .phone-template-front {
-    height: 70vh;
-  }
-}
-
-@media(min-width: 1100px) and (max-width:1300px) {
-  .sign-in-container {
-    width: 28%;
-  }
-
-  .phone-template-back,
-  .phone-template-front {
-    height: 85vh;
-  }
-}
-@media(min-width: 950px) and (max-width:1100px) {
-  .sign-in-container {
-    width: 33%;
-  }
-
-  .phone-templates-container {
-    position: absolute;
-    left: -40px;
-  }
-
-  .phone-template-back,
-  .phone-template-front {
-    height: 95vh;
-  }
-}
-
-@media(max-width: 1100px) {
-  .sign-in-container {
-    position: absolute;
-    right: 20px;
-  }
-}
-
-
-@media(min-width: 875px) and (max-width:950px) {
-  .sign-in-container {
-    width: 38%;
-  }
-
-  .phone-templates-container {
-    position: absolute;
-    left: -125px;
-  }
-
-  .phone-template-back,
-  .phone-template-front {
-    height: 95vh;
-  }
-}
-
-@media(max-width: 875px) {
-
-  .phone-templates-container {
-    display: none;
-  }
-  .sign-in-container{
-    position: relative;
-    left: 0;
-  }
-}
-
-@media(min-width: 750px) and (max-width:875px) {
-  .sign-in-container {
-    width: 40%;
-  }
-}
-
-@media(min-width: 600px) and (max-width:750px) {
-  .sign-in-container {
-    width: 50%;
-  }
-}
-
-@media(min-width: 500px) and (max-width:600px) {
-  .sign-in-container {
-    width: 60%;
-  }
-}
-
-@media(min-width: 400px) and (max-width:500px) {
-  .sign-in-container {
-    width: 75%;
-  }
-}
-
-@media(min-width: 350px) and (max-width:400px) {
-  .sign-in-container {
-    width: 90%;
-  }
-}
-
-@media(min-width: 250px) and (max-width:350px) {
-  .sign-in-container {
-    width: 100%;
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
 /* home page */
-.homepage{
+.homepage {
   display: grid;
   grid-template-columns: 1.1fr 3.8fr 2.8fr;
 }
-.navigation-container > div > img{
+
+.navigation-container>div>img {
   width: 25px;
 }
-.navigation-container{
+
+.navigation-container {
   display: flex;
   flex-direction: column;
   gap: 5px;
@@ -338,7 +19,8 @@
   /* gap: 30px; */
   padding-top: 25px;
 }
-.instagram-logo{
+
+.instagram-logo {
   display: flex;
   align-items: center;
   height: 7%;
@@ -346,15 +28,17 @@
   font-style: italic;
   font-weight: 800;
 }
-.homepage-navbar{
+
+.homepage-navbar {
   display: flex;
   flex-direction: column;
   padding-left: 10px;
   padding-right: 10px;
   height: 95vh;
-  border-right: 1px solid rgb(128, 128, 128,0.5);
+  border-right: 1px solid rgb(128, 128, 128, 0.5);
 }
-.navigation-element{
+
+.navigation-element {
   display: flex;
   width: 100%;
   align-items: center;
@@ -365,9 +49,10 @@
   height: 50px;
   padding-left: 7px;
 }
-.navigation-element:hover{
+
+.navigation-element:hover {
   transition: 0.3s;
-  background-color: rgb(128, 128, 128,0.15);
+  background-color: rgb(128, 128, 128, 0.15);
   border-radius: 10px;
 }
 
@@ -386,11 +71,12 @@
 
 
 /* post */
-.feedpost-container{
+.feedpost-container {
   display: flex;
   justify-content: center;
 }
-.post{
+
+.post {
   display: flex;
   flex-direction: column;
   width: 500px;
@@ -398,7 +84,8 @@
   gap: 5px;
   height: fit-content;
 }
-.poster-details-container{
+
+.poster-details-container {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -406,59 +93,72 @@
   height: 60px;
   /* background-color: red; */
 }
-.poster-details{
+
+.poster-details {
   display: flex;
   align-items: center;
   gap: 4px;
 }
-.poster-details > img:first-child{
+
+.poster-details>img:first-child {
   width: 36px;
   border-radius: 50%;
   border: none;
   padding-right: 10px;
 }
-.verified-icon{
+
+.verified-icon {
   width: 15px;
 }
-.posts-container{
+
+.posts-container {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 300px;
   background-color: white;
 }
-.posts-container > img{
+
+.posts-container>img {
   width: 100%;
 }
-.socials-container{
+
+.socials-container {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
   height: 40px;
 }
-.socials-container > div{
+
+.socials-container>div {
   display: flex;
   align-items: center;
   gap: 15px;
 }
-.like-icon,.comment-icon,.share-icon{
+
+.like-icon,
+.comment-icon,
+.share-icon {
   width: 25px;
 }
-.save-icon{
+
+.save-icon {
   width: 35px;
 }
-.likes-and-comments-container{
+
+.likes-and-comments-container {
   /* background-color: blue; */
   height: 90px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
-.input-comment{
+
+.input-comment {
   height: 35px;
   border: none;
   outline: none;
-  border-bottom: 1px solid rgb(128, 128, 128,0.5);
+  border-bottom: 1px solid rgb(128, 128, 128, 0.5);
 }
 
 
@@ -487,22 +187,24 @@
 
 
 /* follower suggestion */
-.follower-Suggestion-container{
+.follower-Suggestion-container {
   padding-top: 25px;
 }
-.follower-Suggestion-container > div:first-child{
 
-}
-.follower-Suggestion-container > .user-details{
+.follower-Suggestion-container>div:first-child {}
+
+.follower-Suggestion-container>.user-details {
   display: flex;
   align-items: center;
   gap: 10px;
 }
-.follower-Suggestion-container > .user-details > img{
+
+.follower-Suggestion-container>.user-details>img {
   width: 60px;
   border-radius: 50%;
 }
-.user-details > .user-name-details{
+
+.user-details>.user-name-details {
   display: flex;
   flex-direction: column;
   gap: 1px;

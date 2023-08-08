@@ -32,16 +32,6 @@ function FeedPost() {
             ]
         }
     ];
-    const food = [
-        {
-            name : 'gbotemi',
-            age : 22
-        },
-        {
-            name : 'lanry',
-            age : 12
-        }
-    ]
     const images = [
         { url: dummyPost },
         { url: dummyPost2 },

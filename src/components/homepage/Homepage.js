@@ -1,8 +1,7 @@
 import React from 'react'
 import Sidebar from './sidebar';
 import FeedPost from './feedPost';
-import FollowerSugestion from './followerSugestion';
-
+import './Homepage.css'
 function Homepage() {
     const navbar = [
         {
@@ -11,13 +10,17 @@ function Homepage() {
         }
     ]
   return (
-    <div className='homepage'>
+    <section className='homepage'>
+       <header className='homepage-header'>
+        <div>Instagram</div>
+        <img alt="" />
+        <img src="" alt="" />
+       </header>
         <Sidebar />
         <div className='feedpost-container'>
         <FeedPost />
         </div>
-        {/* <FollowerSugestion /> */}
-    </div>
+    </section>
   )
 }
 export default Homepage;

@@ -1,12 +1,13 @@
 import React from 'react';
-import homeIcon from '../images/Homepage/home-icon.svg';
-import searchIcon from '../images/Homepage/search-icon.svg';
-import exploreIcon from '../images/Homepage/explore-icon.svg';
-import reelsIcon from '../images/Homepage/instagram-reels-icon.svg';
-import messagesIcon from '../images/Homepage/message-icon.svg';
-import notificationsIcon from '../images/Homepage/notification-bell-svgrepo-com.svg';
-import createIcon from '../images/Homepage/add-icon.svg';
-import profileIcon from '../images/Homepage/user-profile-icon.svg';
+import homeIcon from '../../assets/Homepage/home-icon.svg';
+import searchIcon from '../../assets/Homepage/search-icon.svg';
+import exploreIcon from '../../assets/Homepage/explore-icon.svg';
+import reelsIcon from '../../assets/Homepage/instagram-reels-icon.svg';
+import messagesIcon from '../../assets/Homepage/message-icon.svg';
+import notificationsIcon from '../../assets/Homepage/notification-bell-svgrepo-com.svg';
+import createIcon from '../../assets/Homepage/add-icon.svg';
+import profileIcon from '../../assets/Homepage/user-profile-icon.svg';
+import instagramLogo from '../../assets/Homepage/instagram-logo.svg'
 function Sidebar() {
     const navElements = [
         {
@@ -44,7 +45,10 @@ function Sidebar() {
     ];
     return (
         <nav className='homepage-navbar'>
-            <div className='instagram-logo'>Instagram</div>
+            <div className='instagram-logo'>
+                <div>Instagram</div>
+                <img src={instagramLogo} alt="" />
+            </div>
             <div className='navigation-container'>
                 {navElements.map(nav => {
                     return <div className='navigation-element'>
@@ -52,9 +56,6 @@ function Sidebar() {
                         <span>{nav.value}</span>
                     </div>
                 })}
-            </div>
-            <div>
-                More
             </div>
         </nav>
     )

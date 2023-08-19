@@ -4,6 +4,7 @@
 }
 .homepage-header{
     display: none;
+    width: 100%;
 }
 
 .navigation-container>div>img {
@@ -65,9 +66,14 @@
 }
 
 @media(max-width:750px) {
-    .homepage {
+    /* .homepage {
         display: flex;
         flex-direction: column;
+    } */
+
+    .homepage{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
     .homepage-navbar{
         display: flex;
@@ -76,14 +82,26 @@
         z-index: 3;
     }
     .homepage-header{
-        display: flex;
-        background-color: orange;
-        position: sticky;
-        top: 0;
-        left: 0;
+        display: block;
+        border-bottom: 1px solid grey;
         z-index: 3;
         height: fit-content;
+        width: 100%;
+        margin: auto;
         padding-bottom: 25px;
+        background-color: white;
+        min-width: max-content;
+        width: 100%;
+        z-index: 3;
+        position: sticky;
+        top: 0;
+        right: 0;
+    }
+    .post{
+        margin: auto;
+    }
+    .feedpost-container{
+        width: 100vw
     }
     .navigation-container {
         position: fixed;
@@ -104,6 +122,14 @@
     }
     .instagram-logo{
         display: none;
+    }
+}
+@media(max-width:510px){
+    .feedpost-container{
+        width: 100%;
+    }
+    .homepage-header{
+        padding-right: 2%;
     }
 }
 .navigation-element {

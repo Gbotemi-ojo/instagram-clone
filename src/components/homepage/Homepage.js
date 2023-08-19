@@ -1,6 +1,7 @@
 import React from 'react'
 import Sidebar from './sidebar';
 import FeedPost from './feedPost';
+import likeIcon from '../../assets/posts/like.svg';
 import './Homepage.css'
 function Homepage() {
     const navbar = [
@@ -13,8 +14,6 @@ function Homepage() {
     <section className='homepage'>
        <header className='homepage-header'>
         <div>Instagram</div>
-        <img alt="" />
-        <img src="" alt="" />
        </header>
         <Sidebar />
         <div className='feedpost-container'>

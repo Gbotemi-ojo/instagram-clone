@@ -1,11 +1,8 @@
-import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
+import React from 'react';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import "../homepage/Homepage.css"
 import { Carousel } from 'react-responsive-carousel';
-import img from '../../assets/Homepage/search-icon.svg'
 import Reel from './reel';
-import FeedPost from '../homepage/feedPost';
 import vid3 from './vid3.mp4'
 function Reels() {
     return (

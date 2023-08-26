@@ -24,10 +24,10 @@ function PhoneTemplateContainer() {
     return (
         <div className='phone-templates-container'>
             <div className='phone-template-back'>
-                <img src={screenshot1} />
+                <img src={screenshot1} alt='screen shot'/>
             </div>
             <div className='phone-template-front'>
-                <img src={currentImg} />
+                <img src={currentImg} alt='screen shot'/>
             </div>
         </div>
     )

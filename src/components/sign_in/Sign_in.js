@@ -45,11 +45,11 @@ function SignIn() {
                         </div>
                     </div>
                 </div>
-                <div className='sign-in-container-bottom'>Don't have an account? <a href=""> Sign up</a></div>
+                <div className='sign-in-container-bottom'>Don't have an account? <a href="#"> Sign up</a></div>
                 <div className='get-the-app-text'>Get the app</div>
                 <div className='sign-in-btns-container'>
-                    <img src={googleplayImage} className='googleBtn' />
-                    <img src={microsoftImage} className='microsoftBtn' />
+                    <img src={googleplayImage} className='googleBtn' alt='play button' />
+                    <img src={microsoftImage} className='microsoftBtn' alt='microsoft button' />
                 </div>
             </div>
         </section>

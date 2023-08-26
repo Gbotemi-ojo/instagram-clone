@@ -1,10 +1,9 @@
 import React from "react";
-import { HashRouter, Routes, Route ,BrowserRouter} from "react-router-dom";
+import { Routes, Route ,BrowserRouter} from "react-router-dom";
 import ShareLayout from "./ShareLayout";
 import ShareLayout2 from "./sharelayout2";
 import FeedPost from "../homepage/feedPost";
 import Reels from "../reels/reels";
-import Reel from '../reels/reel';
 import Signin from '../../components/sign_in/Sign_in'
 
 const RouteSwitch = () => {

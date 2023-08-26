@@ -10,7 +10,6 @@ function SignUp() {
     const [currentImg, setCurrentImg] = useState(screenshot2);
     const [imageIndex, setImageIndex] = useState(0);
     const demoImages = [screenshot1, screenshot2, screenshot3, screenshot4];
-    const toggle_password_visibility = () => { }
     const handleImageIndex = () => {
         setTimeout(() => {
             if (imageIndex === (demoImages.length - 1)) {
@@ -41,10 +40,10 @@ function SignUp() {
         <section className='sign-in-page-container'>
             <div className='phone-templates-container'>
                 <div className='phone-template-back'>
-                    <img src={screenshot1} />
+                    <img src={screenshot1} alt='screen shot'/>
                 </div>
                 <div className='phone-template-front'>
-                    <img src={currentImg} />
+                    <img src={currentImg} alt='screen shot'/>
                 </div>
             </div>
             <div className='sign_up_form_container'>
@@ -72,8 +71,8 @@ function SignUp() {
                 <div className='sign-in-container-bottom'>Don't have an account? <a href=""> Sign up</a></div>
                 <div className='get-the-app-text'>Get the app</div>
                 <div className='sign-in-btns-container'>
-                    <img src={googleplayImage} className='googleBtn' />
-                    <img src={microsoftImage} className='microsoftBtn' />
+                    <img src={googleplayImage} className='googleBtn' alt='play button' />
+                    <img src={microsoftImage} className='microsoftBtn' alt='microsoft button' />
                 </div>
             </div>
         </section>

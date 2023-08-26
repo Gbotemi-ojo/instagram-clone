@@ -2,13 +2,34 @@
     display: grid;
     grid-template-columns: 1fr 5fr;
 }
-.homepage-header{
+
+.homepage-header {
     display: none;
     width: 100%;
 }
 
-.navigation-container>div>img {
+.homepage-header>div {
+    display: flex;
+    align-items: flex-end;
+    height: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.homepage-header-btns {
+    display: flex;
+    gap: 5px;
+}
+
+.homepage-header-btns>img {
     width: 25px;
+}
+
+.navigation-container>a >div>img {
+    width: 25px;
+}
+.navigation-container > a{
+   color: black;
 }
 
 .navigation-container {
@@ -27,6 +48,19 @@
     font-size: 25px;
     font-style: italic;
     font-weight: 800;
+    font-family: 'Barlow', sans-serif;
+    font-family: 'Cinzel', serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Pacifico', cursive;
+}
+
+.instagram-logo-mobile {
+    font-style: italic;
+    font-weight: 800;
+    font-family: 'Barlow', sans-serif;
+    font-family: 'Cinzel', serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Pacifico', cursive;
 }
 
 .instagram-logo>img {
@@ -61,34 +95,42 @@
     border-right: 1px solid rgb(128, 128, 128, 0.5);
     margin-top: 20px;
     position: sticky;
-    top: 0;
+    top: 30px;
     left: 0;
 }
 
 @media(max-width:750px) {
+
     /* .homepage {
         display: flex;
         flex-direction: column;
     } */
+    .navigation-container>div:nth-child(6),
+    .navigation-container>div:nth-child(7) {
+        display: none;
+    }
 
-    .homepage{
+    .homepage {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
-    .homepage-navbar{
+
+    .homepage-navbar {
         display: flex;
         flex-direction: row;
         height: fit-content;
         z-index: 3;
     }
-    .homepage-header{
-        display: block;
+
+    .homepage-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         border-bottom: 1px solid grey;
         z-index: 3;
         height: fit-content;
         width: 100%;
         margin: auto;
-        padding-bottom: 25px;
         background-color: white;
         min-width: max-content;
         width: 100%;
@@ -97,12 +139,15 @@
         top: 0;
         right: 0;
     }
-    .post{
+
+    .post {
         margin: auto;
     }
-    .feedpost-container{
+
+    .feedpost-container {
         width: 100vw
     }
+
     .navigation-container {
         position: fixed;
         bottom: 0;
@@ -114,24 +159,30 @@
         margin: 0;
         padding: 0;
         background-color: white;
+        justify-content: space-around;
     }
-    .navigation-element{
+
+    .navigation-element {
         display: flex;
         justify-content: center;
 
     }
-    .instagram-logo{
+
+    .instagram-logo {
         display: none;
     }
 }
-@media(max-width:510px){
-    .feedpost-container{
+
+/* @media(max-width:510px) {
+    .feedpost-container {
         width: 100%;
     }
-    .homepage-header{
+
+    .homepage-header {
         padding-right: 2%;
     }
-}
+} */
+
 .navigation-element {
     display: flex;
     width: 100%;
@@ -179,11 +230,13 @@
         margin-left: 15%;
     }
 }
+
 @media(max-width:1000px) {
     .feedpost-container {
         margin-left: 5%;
     }
 }
+
 @media(max-width:750px) {
     .feedpost-container {
         margin: 0;
@@ -288,28 +341,43 @@
         display: block;
     }
 }
-.feedpost-container > section{
-    
-}
-.feedpost-container > section:last-child{
+
+.feedpost-container>section {}
+
+.feedpost-container>section:last-child {
     margin-bottom: 150px;
 }
-@media(max-width:1250px){
-    .feedpost-container{
+
+@media(max-width:1250px) {
+    .feedpost-container {
         align-items: center;
         margin: 0;
     }
-    .feedpost-container > section{
+
+    .feedpost-container>section {
         margin: auto;
     }
 }
+
 @media(max-width:500px) {
-    .poster-details-container,.socials-container,.likes-and-comments-container{
+
+    .poster-details-container,
+    .socials-container,
+    .likes-and-comments-container {
         width: 95%;
         margin: auto;
     }
-    .socials-container{
+
+    .socials-container {
         margin-bottom: 15px;
     }
 }
 
+.carousel-root{
+    /* background-color: green; */
+    /* width: 100%;
+    height: 120%; */
+}
+/* .slider{
+    background-color: red;
+} */

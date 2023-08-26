@@ -12,6 +12,7 @@ import dummyPost from '../../assets/posts/yonce.jpg';
 import dummyPost2 from '../../assets/posts/yonce2.jpg';
 import dummyPost3 from '../../assets/posts/yonce3.jpg';
 import dummyPost4 from '../../assets/posts/yonce4.jpg';
+import { NavLink } from 'react-router-dom';
 
 function FeedPost() {
     const test = ()=>{
@@ -102,3 +103,7 @@ function FeedPost() {
 }
 
 export default FeedPost;
+
+
+
+

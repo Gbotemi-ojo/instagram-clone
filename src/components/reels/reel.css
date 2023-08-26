@@ -1,0 +1,44 @@
+.reel-video {
+
+    /* max-width: 40%; */
+    height: 100vh;
+    border-radius: 15px;
+    /* display: none; */
+}
+
+.reel {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.reels-btns {
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    gap: 25px;
+    /* height: 75vh;
+    width: 50% */
+}
+
+.reels-btns>img {
+    width: 25px !important;
+}
+
+@media(max-width:1250px) {
+    .reel {
+        justify-content: center;
+        gap: 25px;
+    }
+}
+
+@media(max-width:750px) {
+    .reel-video {
+        height: 97vh;
+        max-width: 90vw;
+    }
+    .reels-btns{
+        position: absolute;
+    }
+}

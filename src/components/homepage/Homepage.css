@@ -113,6 +113,7 @@
     .homepage {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        width: 100vw;
     }
 
     .homepage-navbar {
@@ -129,7 +130,6 @@
         border-bottom: 1px solid grey;
         z-index: 3;
         height: fit-content;
-        width: 100%;
         margin: auto;
         background-color: white;
         min-width: max-content;

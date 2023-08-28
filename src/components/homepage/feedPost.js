@@ -1,6 +1,6 @@
 import React from 'react';
 import profilePic from '../../assets/posts/dummy.jpeg'
-import SimpleImageSlider from "react-simple-image-slider";
+// import SimpleImageSlider from "react-simple-image-slider";
 import verifiedIcon from '../../assets/Homepage/verified.jpg'
 import moreIcon from '../../assets/Homepage/more-icon.svg'
 // import verifedIcon from '../images/posts/verified-icon.svg';
@@ -9,9 +9,9 @@ import commentIcon from '../../assets/posts/comment.svg';
 import shareIcon from '../../assets/posts/share.svg';
 import saveIcon from '../../assets/posts/save.svg';
 import dummyPost from '../../assets/posts/yonce.jpg';
-import dummyPost2 from '../../assets/posts/yonce2.jpg';
-import dummyPost3 from '../../assets/posts/yonce3.jpg';
-import dummyPost4 from '../../assets/posts/yonce4.jpg';
+// import dummyPost2 from '../../assets/posts/yonce2.jpg';
+// import dummyPost3 from '../../assets/posts/yonce3.jpg';
+// import dummyPost4 from '../../assets/posts/yonce4.jpg';
 
 function FeedPost() {
     const test = ()=>{
@@ -55,12 +55,12 @@ function FeedPost() {
             ]
         }
     ];
-    const images = [
-        { url: dummyPost },
-        { url: dummyPost2 },
-        { url: dummyPost3 },
-        { url: dummyPost4 },
-    ]
+    // const images = [
+    //     { url: dummyPost },
+    //     { url: dummyPost2 },
+    //     { url: dummyPost3 },
+    //     { url: dummyPost4 },
+    // ]
     return(
         feeds.map((feed,index) => {
             return <section className='post'>

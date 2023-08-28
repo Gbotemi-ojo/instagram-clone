@@ -75,13 +75,14 @@ function FeedPost() {
                         <img src={moreIcon} alt="" className='more-icon'/>
                     </div>
                 </div>
-                <SimpleImageSlider
+                {/* <SimpleImageSlider
                     width={510}
                     height={476}
                     images={images}
                     showBullets={true}
                     showNavs={true}
-                />
+                /> */}
+                <img src={dummyPost} alt="" />
                 <div className='socials-container'>
                     <div>
                         <img src={likeIcon} alt="like icon" className='like-icon' onClick={test}/>

@@ -143,10 +143,10 @@
     .post {
         margin: auto;
     }
-
-    .feedpost-container {
+    /* first update */
+    /* .feedpost-container {
         width: 100vw
-    }
+    } */
 
     .navigation-container {
         position: fixed;

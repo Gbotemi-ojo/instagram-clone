@@ -11,15 +11,14 @@ const RouteSwitch = () => {
         <BrowserRouter >
             <Routes>
                 <Route path="/" element={<ShareLayout />}>
-                    <Route path="/profile" element={<div>This is the profile.</div>}/>
-                    <Route path="lovep" element={<div>This is the reels post 22222222.</div>} />
-                    <Route index element={<FeedPost />} path="/" />
+                    <Route path="instagram-clone/profile" element={<div>This is the profile.</div>}/>
+                    <Route index element={<FeedPost />} path="instagram-clone" />
                     <Route element = {<div>error here</div>} path="*" />
                 </Route>
                 <Route path="/" element={<ShareLayout2 />}>
-                    <Route path="/reels" element={<Reels />} />
+                    <Route path="instagram-clone/reels" element={<Reels />} />
                 </Route>
-                <Route path="/signin" element = {<Signin /> }/>
+                <Route path="instagram-clone/signin" element = {<Signin /> }/>
             </Routes>
         </BrowserRouter>
     );

@@ -14,42 +14,42 @@ function Sidebar() {
         {
             value: 'Home',
             image: homeIcon,
-            url : '/'
+            url: 'instagram-clone'
         },
         {
             value: 'Search',
             image: searchIcon,
-            url: '/search'
+            url: 'instagram-clone/search'
         },
         {
             value: 'Explore',
             image: exploreIcon,
-            url: '/explore'
+            url: 'instagram-clone/explore'
         },
         {
             value: 'Reels',
             image: reelsIcon,
-            url : '/reels'
+            url: 'instagram-clone/reels'
         },
         {
             value: 'Messages',
             image: messagesIcon,
-            url : '/messages'
+            url: 'instagram-clone/messages'
         },
         {
             value: 'Notifications',
             image: notificationsIcon,
-            url : '/notification'
+            url: 'instagram-clone/notification'
         },
         {
             value: 'Create',
             image: createIcon,
-            url: '/create'
+            url: 'instagram-clone/create'
         },
         {
             value: 'Profile',
             image: profileIcon,
-            url : '/profile'
+            url: 'instagram-clone/profile'
         },
     ];
     return (

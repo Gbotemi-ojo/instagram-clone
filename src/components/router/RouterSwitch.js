@@ -4,8 +4,8 @@ import ShareLayout from "./ShareLayout";
 import ShareLayout2 from "./sharelayout2";
 import FeedPost from "../homepage/feedPost";
 import Reels from "../reels/reels";
-import Signin from '../../components/sign_in/Sign_in'
-
+import Signin from '../sign_in/Sign_in';
+import Signup from '../sign_up/sign_up';
 const RouteSwitch = () => {
     return (
         <BrowserRouter >
@@ -19,6 +19,7 @@ const RouteSwitch = () => {
                     <Route path="instagram-clone/reels" element={<Reels />} />
                 </Route>
                 <Route path="instagram-clone/signin" element = {<Signin /> }/>
+                <Route path="instagram-clone/signup" element={<Signup />} />
             </Routes>
         </BrowserRouter>
     );

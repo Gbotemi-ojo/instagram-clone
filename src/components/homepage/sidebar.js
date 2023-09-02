@@ -60,7 +60,7 @@ function Sidebar() {
             </div>
             <div className='navigation-container'>
                 {navElements.map(nav => {
-                    return <NavLink to={nav.url}>
+                    return <NavLink to={nav.url} key={nav.url}>
                         <div className='navigation-element'>
                             <img src={nav.image} alt="" />
                             <span>{nav.value}</span>

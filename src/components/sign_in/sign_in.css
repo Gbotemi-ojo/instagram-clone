@@ -30,9 +30,8 @@ a {
     width: 21%;
     display: flex;
     flex-direction: column;
-    height: 70vh;
     height: 540px;
-    justify-content: space-between;
+    gap: 15px;
     position: relative;
     top: 5vh;
 }
@@ -99,6 +98,8 @@ a {
     border: none;
     border-radius: 7px;
     font-weight: 600;
+    margin: auto;
+    cursor: pointer;
 }
 
 .sign-up-breaker {
@@ -125,11 +126,6 @@ a {
     border: 1px solid var(--border-color);
 }
 
-.get-the-app-text {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 .phone-template-back,
 .phone-template-front {
@@ -171,12 +167,6 @@ a {
     margin-top: 50px;
 }
 
-.sign-in-btns-container {
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 25px;
-}
-
 .toggle-password-visibility {
     position: absolute;
     top: 145px;
@@ -185,8 +175,10 @@ a {
     height: 26px;
     border: none;
     text-align: end;
-    background-color: var(--input-color);
     cursor: pointer;
+    border: none;
+    background: none;
+    outline: none;
 }
 
 
@@ -336,4 +328,33 @@ a {
 .sign_up_form{
     display: flex;
     flex-direction: column
+}
+
+.invisible{
+    display: none;
+}
+
+.backend-message{
+    margin: auto;
+    color: red;
+}
+.loader {
+    width: 20px;
+    height: 20px;
+    border: 5px solid #FFF;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }

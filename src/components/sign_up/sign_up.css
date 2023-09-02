@@ -1,0 +1,20 @@
+.input{
+    gap: 10px;
+}
+.toggle-password-visibility-sign-up {
+    position: absolute;
+    top: 233px;
+    right: 35px;
+    width: 100px;
+    height: 26px;
+    border: none;
+    text-align: end;
+    background-color: var(--input-color);
+    cursor: pointer;
+}
+.error{
+    border: 1px solid red;
+}
+.success{
+    border: 1px solid green;
+}

@@ -3,6 +3,10 @@
     grid-template-columns: 1fr 5fr;
 }
 
+.feedpost-container {
+    margin-left: 15%;
+}
+
 .homepage-header {
     display: none;
     width: 100%;
@@ -74,7 +78,7 @@
         display: block;
     }
 
-    .instagram-logo>div {
+    .instagram-logo>h3 {
         display: none;
     }
 
@@ -101,18 +105,14 @@
 }
 
 @media(max-width:750px) {
-    .homepage {
- 
-    }
+    .homepage {}
 
     .navigation-container>a:nth-child(6),
     .navigation-container>a:nth-child(7) {
         display: none;
     }
 
-    .feedpost-container {
- 
-    }
+    .feedpost-container {}
 
     .homepage {
         display: grid;
@@ -257,8 +257,9 @@
     gap: 5px;
     height: fit-content;
 }
+
 @media(max-width:500px) {
-    .post{
+    .post {
         width: 100vw;
     }
 }

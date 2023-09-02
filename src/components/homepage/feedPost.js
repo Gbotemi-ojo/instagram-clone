@@ -1,19 +1,34 @@
-import React from 'react';
+import React,{useEffect} from 'react';
+import axios from 'axios';
 import profilePic from '../../assets/posts/dummy.jpeg'
 // import SimpleImageSlider from "react-simple-image-slider";
 import verifiedIcon from '../../assets/Homepage/verified.jpg'
 import moreIcon from '../../assets/Homepage/more-icon.svg'
-// import verifedIcon from '../images/posts/verified-icon.svg';
 import likeIcon from '../../assets/posts/like.svg';
 import commentIcon from '../../assets/posts/comment.svg';
 import shareIcon from '../../assets/posts/share.svg';
 import saveIcon from '../../assets/posts/save.svg';
 import dummyPost from '../../assets/posts/yonce.jpg';
-// import dummyPost2 from '../../assets/posts/yonce2.jpg';
-// import dummyPost3 from '../../assets/posts/yonce3.jpg';
-// import dummyPost4 from '../../assets/posts/yonce4.jpg';
-
+import { useNavigate } from 'react-router-dom';
 function FeedPost() {
+    let navigate = useNavigate()
+    const url = 'http://localhost:8080/instagram-clone';
+    useEffect(() => {
+        const token = localStorage.getItem('token');
+        if(token === null){
+            navigate(`/instagram-clone/signin`);
+        }
+        axios.get(url, {
+            headers: {
+                Authorization: token,
+            }
+        }).then(res => {
+            console.log(res);
+        }).catch(error => {
+            console.log(error.response.data);
+            // navigate(`/instagram-clone/signin`);
+        })
+    }, []);
     const test = ()=>{
         alert("clicked")
     }
@@ -63,7 +78,7 @@ function FeedPost() {
     // ]
     return(
         feeds.map((feed,index) => {
-            return <section className='post'>
+            return <section className='post' key={index}>
                 <div className='poster-details-container'>
                     <div className='poster-details'>
                         <img src={profilePic} alt="profile-pic" />
@@ -85,7 +100,7 @@ function FeedPost() {
                 <img src={dummyPost} alt="" />
                 <div className='socials-container'>
                     <div>
-                        <img src={likeIcon} alt="like icon" className='like-icon' onClick={test}/>
+                        <img src={likeIcon} alt="like icon" className='like-icon'/>
                         <img src={commentIcon} alt="comment icon" className='comment-icon' />
                         <img src={shareIcon} alt="share icon" className='share-icon' />
                     </div>
